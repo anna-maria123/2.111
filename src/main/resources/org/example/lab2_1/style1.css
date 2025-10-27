@@ -1,0 +1,20 @@
+.root {
+    -fx-background-color: #C8CDED;
+    -fx-padding: 20;
+}
+.button{
+ -fx-background-color: linear-gradient(to right, #46C23F, #5D70B9);
+ -fx-background-radius: 20;
+}
+.text-field {
+-fx-background-color: linear-gradient(to right, #A8A5A599, #B7B7B799);
+ -fx-background-radius: 15;
+  -fx-text-fill: #00000061;
+    -fx-font: italic 14px "Segoe UI";
+}
+#style {
+-fx-background-color: linear-gradient(to right, #F5F5F580, #8F8F8F80);
+
+
+
+}
