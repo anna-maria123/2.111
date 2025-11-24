@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="293.0" prefWidth="916.0" stylesheets="@style1.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="293.0" prefWidth="916.0" stylesheets="@style1.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="org.example.lab2_1.EditController">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
@@ -23,12 +23,12 @@
                         <Insets top="35.0" />
                      </HBox.margin>
                   </Label>
-                  <TextField id="style" prefHeight="46.0" prefWidth="531.0" HBox.hgrow="ALWAYS">
+                  <TextField id="style" fx:id="txtPip" prefHeight="46.0" prefWidth="531.0" HBox.hgrow="ALWAYS">
                      <HBox.margin>
                         <Insets left="40.0" right="-15.0" top="30.0" />
                      </HBox.margin>
                   </TextField>
-                  <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="209.0" text="ОК">
+                  <Button fx:id="ok" onAction="#actionSave" mnemonicParsing="false" prefHeight="57.0" prefWidth="209.0" text="ОК">
                      <HBox.margin>
                         <Insets top="30.0" />
                      </HBox.margin>
@@ -52,12 +52,12 @@
                         <Insets top="30.0" />
                      </HBox.margin>
                   </Label>
-                  <TextField id="style" prefHeight="46.0" prefWidth="467.0" HBox.hgrow="ALWAYS">
+                  <TextField id="style" fx:id="txtPhone" prefHeight="46.0" prefWidth="467.0" HBox.hgrow="ALWAYS">
                      <HBox.margin>
                         <Insets left="-50.0" right="30.0" top="30.0" />
                      </HBox.margin>
                   </TextField>
-                  <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="195.0" text="Відміна">
+                  <Button fx:id="cancel" onAction="#actionClose" mnemonicParsing="false"  prefHeight="57.0" prefWidth="195.0" text="Відміна">
                      <HBox.margin>
                         <Insets top="30.0" />
                      </HBox.margin>

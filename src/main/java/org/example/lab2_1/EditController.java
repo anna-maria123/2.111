@@ -1,0 +1,39 @@
+package org.example.lab2_1;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.Node;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+public class EditController {
+    private Person person;
+    @FXML
+    private TextField txtPip;
+
+    @FXML
+    private TextField txtPhone;
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person){
+        this.person = person;
+        txtPip.setText(person.getPip());
+        txtPhone.setText(person.getPhone());
+    }
+    @FXML
+    void  actionSave(ActionEvent event){
+        person.setPip(txtPip.getText());
+        person.setPhone(txtPhone.getText());
+        actionClose(event);
+
+    }
+    @FXML
+    void actionClose(ActionEvent event){
+        Node source =(Node) event.getSource();
+        Stage stage =(Stage) source.getScene().getWindow();
+        stage.hide();;
+    }
+}
